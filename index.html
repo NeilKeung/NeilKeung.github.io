@@ -1,31 +1,317 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-    background-color: lightblue;
-}
-
-h1 {
-	font-family: verdana;
-    color: darkblue;
-    text-align: center;
-}
-
-p {
-    font-family: verdana;
-    font-size: 20px;
-}
-</style>
-  <meta charset="utf-8">
-  <meta charset="utf-8">
-  <title>nk's web</title>
-   <style><canvas></canvas>
-   .alsp{front-family:"Microsoft YaHei";}
-   </style>
+<title>Home</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Immovable Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<link href="css/gallery.css" rel='stylesheet' type='text/css' />
+<!-- //js -->	
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,600,700,800,400' rel='stylesheet' type='text/css'>
+<!--/fonts-->
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
 </head>
-<body onload="init()">
-<h1>Youliang Jiang</h1>
-<p>hello, this is YJ's pesonal website. </p>
- </body>
+<body>
+	<!--banner-->
+	<div class="banner">
+		<!--header-->
+		<div class="headder">		
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"> </span>
+								<span class="icon-bar"> </span>
+								<span class="icon-bar"> </span>
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#home" class="active">Home</a></li>
+								<li><a href="#about" class="scroll">About me</a></li>
+								<li><a href="#services" class="scroll">Hobbies</a></li>
+								<li><a href="#gallery" class="scroll">My Gallery</a></li>
+								<li><a href="#contact" class="scroll">Contact</a></li>
+							</ul>	
+						</div>	
+				</nav>	
+					<div class="logo">
+						<a class="navbar-brand" href="index.html"><img src="images/logo.png" /></a>
+				</div>
+					<div class="header-right-text">
+						<h3>Tel 608-422-2190</h3>
+					</div>
+					<div class="search-bar">
+			<input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}">
+			<input type="submit" value="">
+	   </div>
+				<div class="clearfix"> </div>			
+		</div>	
+		<!--//header-->
+		<h1 font-family:"Times New Roman"；>Youliang Jiang</h1>
+	</div>
+	<!--//banner-->
+	<!--about-->
+	<div class="about" id="about">
+		<div class="container">
+			<h6>About Me</h6>
+			<div class="about-grids">
+				<div class="col-md-6 about-info">
+					<img src="images/img1.jpg" style="width:300px;height:300px;"alt=""/>
+				</div>
+				<div class="col-md-6 about-info">
+					<h3>Youliang Jiang
+					<p style="font-size: 11pt;"> I was born at Yantai, China. I'm now a student at UW-Madison, working on my BS. of computer science. </p>
+					<p style="font-size: 11pt;"> I like hiking, biking, skateboarding, windsurfing, etc.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--/abouot-->
+	<!--services-->
+	<div class="services" id="services">
+		<!-- container -->
+		<div class="container">
+		   <h6>My Hobbies</h6>
+			<div class="serve-grids">
+				<div class="serve-grids-top">
+					<div class="col-md-3 service-box">
+						<figure class="icon">
+						  <i class="glyphicon glyphicon-modal-window"> </i>
+						</figure>
+						<h5>Java</h5>
+						<p>Sed ut perspiciis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+					</div>
+					<div class="col-md-3 service-box">
+						<figure class="icon">
+						 <i class="glyphicon glyphicon-tent"> </i>
+						</figure>
+						<h5>Making Website</h5>
+						<p>Sed ut perspiciis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+					</div>
+					<div class="col-md-3 service-box">
+						<figure class="icon">
+						 <i class="glyphicon glyphicon-asterisk"> </i>
+						</figure>
+						<h5>Photgraph</h5>
+						<p>Sed ut perspiciis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+					</div>
+					<div class="col-md-3 service-box">
+						<figure class="icon">
+						 <i class="glyphicon glyphicon-map-marker"> </i>
+						</figure>
+						<h5>Play</h5>
+						<p>Sed ut perspiciis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+					</div>
+					<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+</div>
+	<!--/services-->
+	<!--spl-grid-->
+	
+
+						
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+	<!--/spl-grid-->
+	<div class="mid-section">
+	    <div class="container">
+		     <div class="mid-top">
+		        <h2>I love UW-Madison</h2>
+				<p>This is my campus, I would like to grap my every moment when I'm here.</p>
+		     </div>
+		</div>
+	</div>
+    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >手机网站模板</a></div>
+<!--start-gallery-->
+<div class="gallery" id="gallery">
+	<div class="container">
+	  <h6>My Gallery</h6>
+			<div class="gallery-bottom">
+			     <div class="view view-ninth">
+                   <a href="images/g1.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g1.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                    <div class="content">
+                        <h2>flowers</h2>
+                        <p>flowers outside a commnity center</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+              <div class="view view-ninth">
+                   <a href="images/g2.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g2.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                    <div class="content">
+                        <h2>universal studio</h2>
+                        <p>takon at universal studio.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                 <div class="view view-ninth">
+                   <a href="images/g3.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g3.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                    <div class="content">
+                        <h2>Sunset</h2>
+                        <p>Token when I was jogging at a lane by the lake mandota.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="view view-ninth">
+                   <a href="images/g4.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g4.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                    <div class="content">
+                        <h2>Sunset</h2>
+                        <p>In  the summer of Madison, the sun will set at 9:10 o'clock. People like to sitting at terrace, drinking and eatting ice cream.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+               <div class="view view-ninth">
+                   <a href="images/g5.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g5.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                    <div class="content">
+                        <h2>old wall </h2>
+                        <p>I found this wall at a suburbs of Beijing, when I was hiking with my friends. I guess it has a very long history.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                 <div class="view view-ninth">
+                   <a href="images/g6.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g6.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                    <div class="content">
+                        <h2>fruits</h2>
+                        <p>beautiful fruits under a tree on campus</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="view view-ninth">
+                   <a href="images/g7.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g7.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                    <div class="content">
+                        <h2>Sea</h2>
+                        <p>Sea at the southest city of China.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="view view-ninth">
+                   <a href="images/g8.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g8.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                    <div class="content">
+                        <h2>mini-waterfall</h2>
+                        <p>I found this mini-watefall in a park in Sanya. It's winter, but this city is still hot and full of sunshine.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+             <div class="view view-ninth">
+                   <a href="images/g9.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g9.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                    <div class="content">
+                        <h2>my little skateboard</h2>
+                        <p>I bought it in the first month of my college. I had a lot of beatuful Madison aventure with it.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+	</div>
+</div>
+<link rel="stylesheet" href="css/swipebox.css">
+	<script src="js/jquery.swipebox.min.js"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+</script>
+	<!--//gallery-->
+	<!--contact-->
+	<div class="contact" id="contact">
+		<div class="container">
+			<h6>Contact</h6>
+			<div class="contact-grids">
+				<div class="col-md-7 contact-left">				
+					<form>
+						<input type="text" value="Name" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}" required>
+						<input type="email" value="Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Email';}" required>
+						<input type="text" value="Telephone" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Telephone';}" required>
+						<textarea type="text"  onfocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Message...';}" required>Message...</textarea>
+						<input type="submit" value="Submit" >
+					</form>
+				</div>
+				<div class="col-md-5 contact-right">
+					<p class="cnt-p">I like making friends. </p>
+					<p>Address:</p>
+					<p>Apt.804 121 W Gilman Street, Madison, WI, 53703</p>
+					<p>Telephone : +1 608 422 2190</p>
+					<p>Email : <a href="mailto:example@mail.com">wahaha10010@qq.com</a></p>
+				</div>							
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--contact-->
+	<div class="footer">
+		<div class="container">
+			<p>Copyright &copy; s reserved @模板之家</p></div></div>
+	<!--//contact-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				/*
+				var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+				};
+				*/
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up
+	<!-- Bootstrap core JavaScript
+    ================================================== --->
+    <!-- Placed at the end of the document so the pages load faster-->
+    <script src="js/bootstrap.js"> </script>
+</body>
 </html>
